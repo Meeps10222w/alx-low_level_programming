@@ -2,7 +2,7 @@
 #include <unistd.h>
 
 /**
-* Main - prints the size of various types
+* main - prints the size of various types
 * Return: Always 1 (Success)
 */
 int main(void)
