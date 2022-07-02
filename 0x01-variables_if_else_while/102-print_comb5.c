@@ -6,34 +6,31 @@
 */
 int main(void)
 {
-int tens;
-int ones;
-int t;
-int o;
-for (tens = '0'; tens <= '9'; tens++) /*print first two digit combo*/
+int i, j;
+int a, b, c, d;
+for (i = 0; i < 100; i++)
 {
-for (ones = '0'; ones <= '9'; ones++)
+a = i / 10; /* doubles fnum */
+b = i % 10; /* singles fnum */
+for (j = 0; j < 100; j++)
 {
-for (t = tens; t <= '9'; t++) /*print second of pair*/
+c = j / 10; /* doubles snum */
+d = j % 10; /* singles snum */
+if (a < c || (a == c && b < d))
 {
-for (o = ones + 1; o <= '9'; o++)
+putchar(a + '0');
+putchar(b + '0');
+putchar(32);
+putchar(c + '0');
+putchar(d + '0');
+if (!(a == 9 && b == 8))
 {
-putchar(tens);
-putchar(ones);
-putchar(' ');
-putchar(t);
-putchar(o);
-if (!((tens == '9' && ones == '8') &&
-(t == '9' && o == '9')))
-{
-putchar(',');
-putchar(' ');
-}
-}
-o = '0';
+putchar(44);
+putchar(32);
 }
 }
 }
-putchar('\n');
+}
+putchar(10);
 return (0);
 }
