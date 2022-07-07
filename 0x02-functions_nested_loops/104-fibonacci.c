@@ -14,7 +14,7 @@ int main(void)
 	long a_head, a_tail, b_head, b_tail, sum_head, sum_tail;
 
 	printf("1");
-	for (counter = 2; counter < 93; counter++) 
+	for (counter = 2; counter < 93; counter++)
 	{
 	sum = a + b;
 	a = b;
@@ -32,10 +32,10 @@ int main(void)
 	sum_head = (a_head + b_head) + overflow;
 	printf(", %lu%lu", sum_head, sum_tail);
 	a_head = b_head;
-	a_tail = b_tail;
-	b_head = sum_head;
+	a_tail = b_tail;															b_head = sum_head;
 	b_tail = sum_tail;
 	}
 	printf("\n");
-	return (0);
+								return (0);
+
 }
