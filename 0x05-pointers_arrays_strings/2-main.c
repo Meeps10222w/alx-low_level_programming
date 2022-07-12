@@ -7,10 +7,12 @@
 */
 int main(void)
 {
-	int n;
-	n = 402;
-	printf("n=%d\n", n);
-	reset_to_98(&n);
-	printf("n=%d\n", n);
+	char *str;
+	int len;
+
+	str = "My first Srlen!";
+	len = _strlen(str);
+	printf("%d\n", len);
 	return (0);
+
 }
