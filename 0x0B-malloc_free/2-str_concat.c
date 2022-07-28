@@ -24,7 +24,6 @@ char *str_concat(char *s1, char *s2)
 		;
 
 	strout = malloc(sizeof(char) * (i + j + 1));
-	
 	if (strout == NULL)
 	{
 		free(strout);
