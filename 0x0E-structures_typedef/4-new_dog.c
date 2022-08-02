@@ -78,6 +78,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 	(*snoopie).owner = new_owner;
-	
 	return (snoopie);
 }
