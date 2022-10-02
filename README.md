@@ -1,1 +1,1 @@
-C - Bit manipulation
+C - Doubly linked lists
